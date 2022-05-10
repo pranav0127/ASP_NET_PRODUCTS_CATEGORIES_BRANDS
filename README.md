@@ -2,6 +2,8 @@
 
 # ASP.NET-BRAND_CATEGORY_PRODUCT
 
+***Change the Connection String in the database folder***
+
 ## First Create a Local Database in your system : 
 ### Now Create a Three tables named : 
  1. **products**
@@ -48,6 +50,9 @@ PRIMARY KEY CLUSTERED <br>
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]<br>
 ) ON [PRIMARY]<br>
 GO<br>
+
+
+
 
 ALTER TABLE [dbo].[products]  WITH CHECK ADD FOREIGN KEY([brand_id])<br>
 REFERENCES [dbo].[brands] ([brand_id])<br>
